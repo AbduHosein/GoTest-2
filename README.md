@@ -20,4 +20,4 @@ main:
 # Reflection
   The program ran into some issues when implementing the parallel functionality, although in theory I thought my implementation would work--it seems I still need some practice/understanding of go routines, channels, and concurrency in general to make this work. However, Im still satisfied with what I did in a short time and will work to find the solution in my own time.
   
-#Thanks for reading
+# Thanks for reading
