@@ -1,6 +1,6 @@
 ## GoTest-2: Documentation
 
-#Functions:
+# Functions:
 
 benchmarkParallelsum: 
   Takes a slice created from user input, and a channel. The function will sum values in the slice and return result to a channel
