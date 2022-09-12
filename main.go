@@ -54,6 +54,7 @@ func main() {
 	c1 := make(chan int)
 	c2 := make(chan int)
 	c3 := make(chan int)
+
 	// Prompt user for integer value, handle nil values --stack overflow
 	fmt.Println("Enter an integer value:")
 	_, err := fmt.Scanf("%d", &x)
@@ -72,7 +73,7 @@ func main() {
 	// Benchmarking sum calculation without go routines
 	fmt.Println("Performance of parallel summation:")
 	start := now
-	benchmarkParallelsum(nums, c1)
+	go benchmarkParallelsum(nums, c1)
 	elapsed := time.Since(start)
 	fmt.Println(<-c1)
 	fmt.Println(elapsed)
